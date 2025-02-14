@@ -33,7 +33,7 @@ function getWord() {
     }).then(function (text) {
       var wordsArray = text.split('\r\n');
       var min = 0;
-      var max = 2;
+      var max = wordsArray.length - 1;
       var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
       callAPI(wordsArray[randomNumber]);
     }).catch(function (error) {
