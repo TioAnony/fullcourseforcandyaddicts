@@ -2,7 +2,7 @@
   background-color: black;
   background-image: url("images/forest.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: center;
 }
 
 .content {
@@ -11,14 +11,20 @@
   justify-content: center;
 }
 
+.content .textBackground {
+  background: rgba(0, 0, 0, .4);
+}
+
 .content .text {
+  margin: 0;
   font-size: 50px;
   font-family: sans-serif;
   background: rgb(153,153,200);
-  background: linear-gradient(180deg, rgba(153,153,200,1) 0%, rgba(124,106,168,1) 10%, rgba(0,81,255,1) 50%);
+  background: linear-gradient(180deg, rgba(153,153,200,1) 0%, rgba(168,106,129,1) 10%, rgba(255,0,124,1) 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: brightness(140%);
 }
 
 .content .buttonImage {
@@ -29,4 +35,14 @@
 .content .button {
   border: none;
   background: none;
+}
+
+#curiosityText {
+  font-size: 30px;
+  font-family: sans-serif;
+  background: rgb(153,153,200);
+  background: linear-gradient(180deg, rgba(153,153,200,1) 0%, rgba(168,106,129,1) 10%, rgba(255,0,124,1) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

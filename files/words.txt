@@ -1,3 +1,10 @@
-eye
-candy
-arm
+canyon, violin, thunder, bakery, astronaut, jungle, mirror, ladder, volcano, crystal,  
+robot, cathedral, guitar, pyramid, hurricane, compass, bicycle, rainbow, chess, stadium,  
+whale, lantern, submarine, glacier, tornado, barcode, diamond, circus, bracelet, desert,  
+parrot, zeppelin, blueprint, labyrinth, fossil, palace, chariot, canyon, skyline, amphitheater,  
+carousel, museum, lighthouse, temple, waterfall, hurricane, skyscraper, orchestra, dagger, cello,  
+meadow, anchor, crocodile, rocket, eclipse, architect, island, dragonfly, submarine, highway,  
+bonsai, athlete, lagoon, lantern, jungle, astronaut, melody, village, shipwreck, phoenix,  
+heaven, telescope, sphinx, astronaut, canyon, coral, arm, astronaut, jungle, mosaic,  
+zeppelin, cross, heart, runway, tapestry, dolphin, sunrise, chandelier, runway, hammock,  
+lighthouse, volcano, sculpture, parchment, ballet, rainbow, compass, parchment, lightning, temple

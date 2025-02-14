@@ -31,11 +31,15 @@ function getWord() {
   fetch(file).then(function (response) {
       return response.text();
     }).then(function (text) {
-      var wordsArray = text.split('\r\n');
+      var wordsArray = text.split(', ');
       var min = 0;
       var max = wordsArray.length - 1;
       var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-      callAPI(wordsArray[randomNumber]);
+      var selectedWord = wordsArray[randomNumber];
+
+      console.log(selectedWord);
+
+      callAPI(selectedWord);
     }).catch(function (error) {
       console.error("Error:", error);
     });
@@ -49,7 +53,7 @@ function callAPI(selectedWord) {
   }).then(function(response) {
       return response.json();
     }).then(function (data) {
-        addCuriosityText(data)
+        addCuriosityText(data);
     }).catch(function (error) {
         console.error('Error:', error);
     });;
@@ -57,16 +61,31 @@ function callAPI(selectedWord) {
 
 function addCuriosityText(data) {
   var newText = document.createElement("h1");
+  var curiosityText = data.query.pages[0].extract;
+
+  console.log(curiosityText);
+
   newText.classList.add("text");
   newText.setAttribute("id", "curiosityText");
-  newText.textContent = data.query.pages[0].extract;
   document.querySelector(".content").appendChild(newText);
+
+  var newTextBackground = document.createElement("span");
+
+  newTextBackground.classList.add("textBackground");
+  newTextBackground.textContent = curiosityText;
+  document.querySelector("#curiosityText").appendChild(newTextBackground);
 }
 
 function addEnoughText() {
   var newText = document.createElement("h1");
+
   newText.classList.add("text");
   newText.setAttribute("id", "enoughText");
-  newText.textContent = "That's enough for you!";
   document.querySelector(".content").appendChild(newText);
+
+  var newTextBackground = document.createElement("span");
+
+  newTextBackground.classList.add("textBackground");
+  newTextBackground.textContent = "That's enough for you!";
+  document.querySelector("#enoughText").appendChild(newTextBackground);
 }
