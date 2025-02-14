@@ -1,6 +1,6 @@
 .background {
   background-color: black;
-  background-image: url("images/a-calm-and-blue-sea-water-background-with-sky-free-photo.jpg");
+  background-image: url("images/forest.jpg");
   background-size: cover;
   background-position: center top;
 }
@@ -13,8 +13,9 @@
 
 .content .text {
   font-size: 50px;
-  background: rgb(38,25,255);
-  background: linear-gradient(360deg, rgba(38,25,255,1) 0%, rgba(0,0,255,1) 0%, rgba(0,255,18,1) 50%);
+  font-family: sans-serif;
+  background: rgb(153,153,200);
+  background: linear-gradient(180deg, rgba(153,153,200,1) 0%, rgba(124,106,168,1) 10%, rgba(0,81,255,1) 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
